@@ -4,7 +4,7 @@
 
 #### Classifiers
 
-Contains the classidiers used in the paper ordered by test.
+Contains the classifiers used in the paper ordered by test.
 
 #### Project
 
