@@ -1,0 +1,1182 @@
+@RELATION player
+
+@ATTRIBUTE distancia_ar       {pequena,media,grande}
+@ATTRIBUTE gv_distancia_ar    NUMERIC
+@ATTRIBUTE distancia_jr       {pequena,media,grande}
+@ATTRIBUTE gv_distancia_jr    NUMERIC
+@ATTRIBUTE proteccion         {baja,media,alta}
+@ATTRIBUTE gv_proteccion      NUMERIC
+@ATTRIBUTE distancia_ja       {pequena,media,grande}
+@ATTRIBUTE gv_distancia_ja    NUMERIC
+@ATTRIBUTE tiempo             {poco,razonable,Mucho}
+@ATTRIBUTE gv_tiempo          NUMERIC
+@ATTRIBUTE actitud            {sabio,valiente,prudente,pasivo}
+@ATTRIBUTE gv_actitud         NUMERIC
+@ATTRIBUTE situacion          {arriesgada,peligrosa,segura,facil}
+@ATTRIBUTE gv_situacion       NUMERIC
+@ATTRIBUTE movimiento         {bueno,asustado,kamikaze,malo}
+@ATTRIBUTE gv_movimiento      NUMERIC
+@ATTRIBUTE accion             {"seguir adelante",evadir}
+
+@DATA
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5495689655172415,grande,1.0,poco,1.0,sabio,0.75,segura,0.7747844827586208,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.5600728155339804,grande,1.0,poco,1.0,sabio,0.875,facil,0.7800364077669901,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5592948717948716,grande,1.0,poco,1.0,sabio,1.0,facil,0.7796474358974358,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5982142857142857,grande,1.0,poco,1.0,sabio,1.0,facil,0.7991071428571428,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,0.75,facil,0.9540441176470589,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,0.875,facil,0.9540441176470589,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7596153846153847,grande,1.0,poco,1.0,sabio,1.0,facil,0.8798076923076923,bueno,1.0,"seguir adelante"
+grande,1.0,grande,0.75,baja,0.7632575757575756,grande,1.0,poco,1.0,pasivo,0.875,facil,0.8816287878787878,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.7306034482758622,grande,1.0,poco,1.0,sabio,0.75,facil,0.865301724137931,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.5624999999999999,grande,1.0,poco,1.0,sabio,0.875,facil,0.78125,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,baja,0.6279761904761904,grande,1.0,poco,1.0,sabio,0.875,facil,0.8139880952380951,bueno,1.0,"seguir adelante"
+media,0.5,media,0.75,media,0.6433823529411767,grande,1.0,poco,1.0,valiente,0.625,segura,0.8216911764705883,bueno,0.875,evadir
+media,0.75,pequena,0.5,baja,0.6394230769230768,grande,0.75,poco,1.0,sabio,0.625,facil,0.6947115384615383,bueno,0.625,"seguir adelante"
+media,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,valiente,0.875,segura,0.6354166666666666,bueno,0.75,evadir
+media,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+media,1.0,pequena,1.0,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5049019607843137,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,1.0,facil,0.8883928571428572,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,media,0.75,baja,1.0,media,0.75,poco,1.0,valiente,0.625,facil,0.875,bueno,0.75,evadir
+grande,1.0,media,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,grande,0.75,media,0.5208333333333333,media,0.75,poco,1.0,pasivo,0.875,segura,0.6354166666666666,asustado,0.75,evadir
+grande,1.0,media,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.75,"seguir adelante"
+media,0.5,pequena,1.0,alta,0.6606334841628959,media,1.0,poco,1.0,sabio,0.75,segura,0.8303167420814479,bueno,1.0,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,media,1.0,media,0.75,poco,1.0,valiente,0.875,segura,0.875,bueno,0.875,evadir
+media,1.0,media,0.75,media,0.8680555555555557,media,0.75,poco,1.0,valiente,0.875,segura,0.8090277777777779,bueno,0.75,evadir
+grande,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.875,evadir
+media,1.0,media,0.75,media,1.0,pequena,0.75,poco,1.0,valiente,0.875,arriesgada,0.875,kamikaze,0.75,evadir
+media,0.75,pequena,0.5,media,1.0,pequena,0.75,poco,1.0,sabio,0.625,arriesgada,0.875,kamikaze,0.625,evadir
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+media,1.0,pequena,1.0,media,0.9375000000000003,media,0.75,poco,1.0,sabio,1.0,segura,0.8437500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,0.75,poco,1.0,sabio,1.0,segura,0.8437500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6875,media,0.75,poco,1.0,sabio,0.875,facil,0.71875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.625,segura,0.765625,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,pasivo,1.0,facil,0.8197115384615383,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,1.0,segura,0.8348214285714286,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,1.0,pequena,0.5,poco,1.0,pasivo,1.0,arriesgada,0.75,malo,0.75,evadir
+grande,1.0,grande,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,pasivo,0.875,arriesgada,0.5104166666666666,malo,0.625,evadir
+grande,1.0,media,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,1.0,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.7812500000000001,media,0.75,poco,1.0,sabio,1.0,segura,0.765625,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5495689655172415,grande,1.0,poco,1.0,sabio,0.75,segura,0.7747844827586208,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.5600728155339804,grande,1.0,poco,1.0,sabio,0.875,facil,0.7800364077669901,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5592948717948716,grande,1.0,poco,1.0,sabio,1.0,facil,0.7796474358974358,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5982142857142857,grande,1.0,poco,1.0,sabio,1.0,facil,0.7991071428571428,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,0.75,facil,0.9540441176470589,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,0.875,facil,0.9540441176470589,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,1.0,facil,0.9540441176470589,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7767857142857143,grande,1.0,poco,1.0,sabio,1.0,facil,0.8883928571428572,bueno,1.0,"seguir adelante"
+grande,1.0,grande,0.75,baja,0.8487903225806452,grande,1.0,poco,1.0,pasivo,0.875,facil,0.9243951612903226,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.7306034482758622,grande,1.0,poco,1.0,sabio,0.75,facil,0.865301724137931,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.5624999999999999,grande,1.0,poco,1.0,sabio,0.875,facil,0.78125,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,baja,0.6279761904761904,grande,1.0,poco,1.0,sabio,0.875,facil,0.8139880952380951,bueno,1.0,"seguir adelante"
+media,0.5,media,0.75,media,0.6433823529411767,grande,1.0,poco,1.0,valiente,0.625,segura,0.8216911764705883,bueno,0.875,evadir
+media,0.75,pequena,0.5,baja,0.6394230769230768,grande,0.75,poco,1.0,sabio,0.625,facil,0.6947115384615383,bueno,0.625,"seguir adelante"
+media,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,valiente,0.875,segura,0.6354166666666666,bueno,0.75,evadir
+media,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,0.75,poco,1.0,sabio,1.0,segura,0.8437500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,0.5,media,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,media,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+grande,1.0,media,0.5,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,0.875,segura,0.9687500000000002,asustado,0.875,evadir
+grande,1.0,media,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.5,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,1.0,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,0.75,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+media,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,valiente,1.0,segura,1.0,bueno,1.0,evadir
+media,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.875,evadir
+grande,1.0,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.875,evadir
+media,0.75,media,0.75,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,0.5,alta,1.0,pequena,1.0,poco,1.0,sabio,0.75,arriesgada,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,0.875,arriesgada,0.5049019607843137,kamikaze,0.625,evadir
+grande,1.0,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,1.0,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,pasivo,1.0,facil,0.8197115384615383,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.8680555555555557,media,0.75,poco,1.0,pasivo,1.0,segura,0.8090277777777779,asustado,0.875,evadir
+grande,1.0,grande,1.0,media,1.0,media,0.75,poco,1.0,pasivo,1.0,segura,0.875,asustado,0.875,evadir
+grande,1.0,grande,0.75,media,0.7812500000000001,media,0.75,poco,1.0,pasivo,0.875,segura,0.765625,asustado,0.75,evadir
+grande,1.0,media,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,1.0,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7767857142857143,media,0.5,poco,1.0,sabio,1.0,facil,0.6383928571428572,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.5888157894736843,media,0.5,poco,1.0,sabio,0.75,facil,0.5444078947368421,bueno,0.625,"seguir adelante"
+media,0.5,pequena,1.0,media,0.7401315789473684,media,0.5,poco,1.0,sabio,0.75,segura,0.6200657894736842,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.5,poco,1.0,sabio,0.875,segura,0.75,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5495689655172415,grande,1.0,poco,1.0,sabio,0.75,segura,0.7747844827586208,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.5463709677419355,grande,1.0,poco,1.0,sabio,0.875,facil,0.7731854838709677,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.5716463414634149,grande,1.0,poco,1.0,sabio,1.0,segura,0.7858231707317074,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.5489864864864865,grande,1.0,poco,1.0,sabio,1.0,segura,0.7744932432432432,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7596153846153847,grande,1.0,poco,1.0,sabio,0.75,facil,0.8798076923076923,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,1.0,grande,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7596153846153847,grande,1.0,poco,1.0,sabio,1.0,facil,0.8798076923076923,bueno,1.0,"seguir adelante"
+grande,1.0,grande,0.75,baja,0.7632575757575756,grande,1.0,poco,1.0,pasivo,0.875,facil,0.8816287878787878,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.7306034482758622,grande,1.0,poco,1.0,sabio,0.75,facil,0.865301724137931,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.7106481481481483,grande,1.0,poco,1.0,sabio,0.875,facil,0.8553240740740742,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.6114130434782609,grande,1.0,poco,1.0,sabio,1.0,segura,0.8057065217391304,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,baja,0.5888157894736843,grande,1.0,poco,1.0,sabio,0.75,facil,0.7944078947368421,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,media,0.7291666666666666,grande,1.0,poco,1.0,sabio,0.5,segura,0.8645833333333333,bueno,0.75,"seguir adelante"
+media,0.75,media,0.75,baja,0.5738636363636364,media,0.5,poco,1.0,valiente,0.75,facil,0.5369318181818181,bueno,0.625,evadir
+media,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,0.75,poco,1.0,sabio,1.0,segura,0.8437500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6875,media,0.75,poco,1.0,sabio,0.625,facil,0.71875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,0.75,media,1.0,pequena,0.75,poco,1.0,sabio,0.875,arriesgada,0.875,kamikaze,0.75,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,0.5,media,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,media,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+grande,1.0,media,0.5,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,0.875,segura,0.9687500000000002,asustado,0.875,evadir
+grande,1.0,media,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.5,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,1.0,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,0.75,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,1.0,media,0.75,media,0.8680555555555557,media,0.75,poco,1.0,valiente,0.875,segura,0.8090277777777779,bueno,0.75,evadir
+grande,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.875,evadir
+media,0.75,media,0.75,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.75,pequena,0.5,media,1.0,pequena,0.75,poco,1.0,sabio,0.625,arriesgada,0.875,kamikaze,0.625,evadir
+media,0.5,pequena,0.75,media,0.9375000000000003,media,0.75,poco,1.0,sabio,0.625,segura,0.8437500000000002,bueno,0.75,"seguir adelante"
+media,0.5,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,0.875,arriesgada,0.5049019607843137,kamikaze,0.625,evadir
+grande,1.0,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,1.0,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,pasivo,1.0,facil,0.8197115384615383,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,1.0,segura,0.8348214285714286,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,1.0,pequena,0.5,poco,1.0,pasivo,1.0,arriesgada,0.75,malo,0.75,evadir
+grande,1.0,grande,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,pasivo,0.875,arriesgada,0.5104166666666666,malo,0.625,evadir
+grande,1.0,media,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,1.0,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.7812500000000001,media,0.75,poco,1.0,sabio,1.0,segura,0.765625,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6696428571428573,grande,1.0,poco,1.0,sabio,1.0,segura,0.8348214285714286,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.6167763157894736,grande,1.0,poco,1.0,sabio,0.75,segura,0.8083881578947367,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.6567028985507248,grande,1.0,poco,1.0,sabio,0.875,segura,0.8283514492753624,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.6696428571428573,grande,1.0,poco,1.0,sabio,0.75,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.625,grande,1.0,poco,1.0,sabio,0.75,segura,0.8125,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.7996794871794871,grande,1.0,poco,1.0,sabio,0.875,facil,0.8998397435897436,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.8383620689655172,grande,1.0,poco,1.0,sabio,1.0,facil,0.9191810344827587,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,0.75,facil,0.8697916666666665,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.6394230769230768,grande,1.0,poco,1.0,sabio,1.0,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,grande,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.9495967741935484,grande,1.0,poco,1.0,sabio,1.0,facil,0.9747983870967742,bueno,1.0,"seguir adelante"
+media,0.75,grande,1.0,baja,1.0,grande,1.0,poco,1.0,pasivo,0.875,facil,1.0,asustado,1.0,evadir
+media,1.0,grande,1.0,baja,0.8958333333333334,grande,1.0,poco,1.0,pasivo,1.0,facil,0.9479166666666667,asustado,1.0,evadir
+media,0.75,grande,0.75,baja,1.0,media,0.5,poco,1.0,pasivo,0.75,facil,0.75,asustado,0.625,evadir
+media,1.0,media,0.5,baja,1.0,media,1.0,poco,1.0,valiente,0.75,facil,1.0,bueno,0.75,evadir
+pequena,0.5,media,0.75,baja,1.0,media,0.75,poco,1.0,prudente,0.625,facil,0.875,bueno,0.75,evadir
+media,0.75,media,1.0,media,1.0,media,0.75,poco,1.0,valiente,0.875,segura,0.875,bueno,0.875,evadir
+media,1.0,media,0.75,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.75,evadir
+media,0.75,media,1.0,alta,1.0,pequena,0.75,poco,1.0,valiente,0.875,arriesgada,0.875,kamikaze,0.875,evadir
+media,0.5,media,0.75,baja,0.6875,media,0.75,poco,1.0,valiente,0.625,facil,0.71875,bueno,0.75,evadir
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.875,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.875,facil,0.8883928571428572,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.75,facil,0.8883928571428572,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.875,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,grande,1.0,baja,1.0,media,1.0,poco,1.0,pasivo,0.875,facil,1.0,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,1.0,segura,0.8348214285714286,asustado,1.0,evadir
+grande,1.0,grande,0.75,media,0.8413461538461541,media,1.0,poco,1.0,pasivo,0.875,segura,0.9206730769230771,asustado,0.875,evadir
+grande,1.0,media,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,0.875,segura,0.9687500000000002,asustado,0.875,evadir
+grande,1.0,media,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.5,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,1.0,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,sabio,1.0,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.75,facil,0.8883928571428572,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+pequena,0.5,media,1.0,media,1.0,media,1.0,poco,1.0,prudente,0.75,segura,1.0,bueno,1.0,evadir
+pequena,0.75,media,0.75,media,0.8413461538461541,media,1.0,poco,1.0,prudente,0.75,segura,0.9206730769230771,bueno,0.875,evadir
+pequena,1.0,pequena,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.75,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+pequena,0.5,grande,1.0,baja,1.0,media,1.0,poco,1.0,prudente,0.75,facil,1.0,asustado,1.0,"seguir adelante"
+media,0.75,grande,0.75,baja,0.6875,media,1.0,poco,1.0,pasivo,0.75,facil,0.84375,asustado,0.875,evadir
+media,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.75,evadir
+media,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,valiente,0.75,segura,1.0,bueno,0.875,evadir
+media,0.5,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,1.0,evadir
+grande,0.75,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,0.75,baja,0.6875,media,1.0,poco,1.0,pasivo,0.875,facil,0.84375,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.7812500000000001,media,0.75,poco,1.0,sabio,1.0,segura,0.765625,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.6167763157894736,grande,1.0,poco,1.0,sabio,0.75,segura,0.8083881578947367,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.6620762711864407,grande,1.0,poco,1.0,sabio,0.875,segura,0.8310381355932204,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.6696428571428573,grande,1.0,poco,1.0,sabio,0.75,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.625,grande,1.0,poco,1.0,sabio,0.75,segura,0.8125,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.7996794871794871,grande,1.0,poco,1.0,sabio,0.875,facil,0.8998397435897436,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.8383620689655172,grande,1.0,poco,1.0,sabio,1.0,facil,0.9191810344827587,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,0.75,facil,0.8697916666666665,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,1.0,facil,0.8697916666666665,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,grande,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+media,1.0,grande,1.0,baja,0.8958333333333334,grande,1.0,poco,1.0,pasivo,1.0,facil,0.9479166666666667,asustado,1.0,evadir
+media,0.75,grande,0.75,baja,1.0,media,0.5,poco,1.0,pasivo,0.75,facil,0.75,asustado,0.625,evadir
+media,1.0,media,0.5,baja,1.0,media,1.0,poco,1.0,valiente,0.75,facil,1.0,bueno,0.75,evadir
+media,0.75,media,0.75,media,0.8413461538461541,media,1.0,poco,1.0,valiente,0.75,segura,0.9206730769230771,bueno,0.875,evadir
+pequena,0.5,media,1.0,media,0.8413461538461541,media,1.0,poco,1.0,prudente,0.75,segura,0.9206730769230771,bueno,1.0,evadir
+media,0.75,media,0.75,media,0.6696428571428573,media,1.0,poco,1.0,valiente,0.75,segura,0.8348214285714286,bueno,0.875,evadir
+media,1.0,media,0.75,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.75,evadir
+media,1.0,media,1.0,media,1.0,pequena,0.5,poco,1.0,valiente,1.0,arriesgada,0.75,kamikaze,0.75,evadir
+media,0.75,media,0.75,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.875,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.875,facil,0.8883928571428572,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.75,facil,0.8883928571428572,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.875,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,grande,1.0,baja,1.0,media,1.0,poco,1.0,pasivo,0.875,facil,1.0,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,1.0,segura,0.8348214285714286,asustado,1.0,evadir
+grande,1.0,grande,0.75,media,0.8413461538461541,media,1.0,poco,1.0,pasivo,0.875,segura,0.9206730769230771,asustado,0.875,evadir
+grande,1.0,media,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,0.875,segura,0.9687500000000002,asustado,0.875,evadir
+grande,1.0,media,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.5,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,1.0,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,sabio,1.0,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.75,facil,0.8883928571428572,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+pequena,0.5,media,1.0,media,1.0,media,1.0,poco,1.0,prudente,0.75,segura,1.0,bueno,1.0,evadir
+pequena,0.75,media,0.75,media,0.8413461538461541,media,1.0,poco,1.0,prudente,0.75,segura,0.9206730769230771,bueno,0.875,evadir
+pequena,1.0,pequena,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.75,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+pequena,0.5,grande,1.0,baja,1.0,media,1.0,poco,1.0,prudente,0.75,facil,1.0,asustado,1.0,"seguir adelante"
+media,0.75,grande,0.75,baja,0.6875,media,1.0,poco,1.0,pasivo,0.75,facil,0.84375,asustado,0.875,evadir
+media,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.75,evadir
+media,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,valiente,0.75,segura,1.0,bueno,0.875,evadir
+media,0.5,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,1.0,evadir
+grande,0.75,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,0.75,baja,0.6875,media,1.0,poco,1.0,pasivo,0.875,facil,0.84375,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.7812500000000001,media,0.75,poco,1.0,sabio,1.0,segura,0.765625,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7275763358778627,grande,1.0,poco,1.0,sabio,0.75,segura,0.8637881679389314,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7573689956331877,grande,1.0,poco,1.0,sabio,0.75,segura,0.8786844978165939,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.7884174311926608,grande,1.0,poco,1.0,sabio,0.875,segura,0.8942087155963304,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.7646276595744681,grande,1.0,poco,1.0,sabio,1.0,segura,0.882313829787234,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.7812500000000001,grande,1.0,poco,1.0,sabio,1.0,segura,0.890625,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.7262323943661974,grande,1.0,poco,1.0,sabio,0.875,segura,0.8631161971830987,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.873940677966102,grande,1.0,poco,1.0,sabio,0.75,segura,0.936970338983051,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.5514705882352944,grande,1.0,poco,1.0,sabio,1.0,segura,0.7757352941176472,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.6394230769230768,grande,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.6394230769230768,grande,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,1.0,facil,0.8697916666666665,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.8579545454545455,grande,1.0,poco,1.0,sabio,0.875,facil,0.9289772727272727,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.9495967741935484,grande,1.0,poco,1.0,sabio,1.0,facil,0.9747983870967742,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,0.8124999999999998,grande,1.0,poco,1.0,sabio,1.0,facil,0.9062499999999999,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.5,poco,1.0,sabio,0.75,facil,0.75,bueno,0.5,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,media,0.5,poco,1.0,sabio,1.0,facil,0.75,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.75,"seguir adelante"
+grande,0.75,grande,1.0,baja,1.0,media,0.5,poco,1.0,pasivo,0.875,facil,0.75,asustado,0.75,evadir
+media,0.5,grande,1.0,baja,0.8579545454545455,media,0.5,poco,1.0,pasivo,0.75,facil,0.6789772727272727,asustado,0.75,evadir
+grande,1.0,grande,1.0,baja,0.9320652173913044,media,0.5,poco,1.0,pasivo,1.0,facil,0.7160326086956522,asustado,0.75,evadir
+grande,1.0,grande,1.0,baja,0.8579545454545455,media,0.5,poco,1.0,pasivo,1.0,facil,0.6789772727272727,asustado,0.75,evadir
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,1.0,media,1.0,poco,1.0,pasivo,1.0,segura,1.0,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.7767857142857143,media,1.0,poco,1.0,pasivo,1.0,facil,0.8883928571428572,asustado,1.0,evadir
+grande,1.0,grande,0.75,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,0.875,segura,0.8348214285714286,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.5,media,1.0,baja,1.0,media,1.0,poco,1.0,valiente,0.75,facil,1.0,bueno,1.0,evadir
+media,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,valiente,0.875,segura,0.765625,bueno,0.75,evadir
+media,0.75,pequena,0.5,baja,0.6875,media,0.75,poco,1.0,sabio,0.625,facil,0.71875,bueno,0.625,"seguir adelante"
+pequena,0.5,pequena,0.75,media,0.9375000000000003,media,0.75,poco,1.0,valiente,0.625,segura,0.8437500000000002,bueno,0.75,evadir
+pequena,0.5,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,1.0,evadir
+media,0.75,pequena,1.0,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,0.875,arriesgada,0.5049019607843137,kamikaze,0.75,evadir
+grande,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,media,1.0,media,1.0,media,1.0,poco,1.0,valiente,0.75,segura,1.0,bueno,1.0,evadir
+media,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.875,evadir
+media,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,valiente,1.0,segura,1.0,bueno,1.0,evadir
+grande,1.0,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,0.6875,media,1.0,poco,1.0,sabio,1.0,facil,0.84375,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.75,segura,0.8348214285714286,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,media,0.75,baja,1.0,media,0.75,poco,1.0,valiente,0.625,facil,0.875,bueno,0.75,evadir
+grande,1.0,media,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,grande,0.75,media,0.5208333333333333,media,0.75,poco,1.0,pasivo,0.875,segura,0.6354166666666666,asustado,0.75,evadir
+grande,1.0,media,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,media,1.0,media,0.75,poco,1.0,valiente,0.875,segura,0.875,bueno,0.875,evadir
+media,1.0,media,0.75,media,0.8680555555555557,media,0.75,poco,1.0,valiente,0.875,segura,0.8090277777777779,bueno,0.75,evadir
+media,0.75,media,1.0,media,0.7812500000000001,media,0.75,poco,1.0,valiente,0.875,segura,0.765625,bueno,0.875,evadir
+pequena,0.5,media,0.75,baja,1.0,media,0.75,poco,1.0,prudente,0.625,facil,0.875,bueno,0.75,evadir
+pequena,0.75,media,0.5,media,0.5208333333333333,media,0.75,poco,1.0,prudente,0.625,segura,0.6354166666666666,bueno,0.625,evadir
+pequena,1.0,grande,0.75,baja,1.0,media,0.75,poco,1.0,prudente,0.875,facil,0.875,asustado,0.75,"seguir adelante"
+media,0.75,media,0.5,media,1.0,media,0.75,poco,1.0,valiente,0.625,segura,0.875,bueno,0.625,evadir
+media,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.875,evadir
+media,1.0,media,1.0,media,1.0,pequena,0.5,poco,1.0,valiente,1.0,arriesgada,0.75,kamikaze,0.75,evadir
+media,0.75,media,0.75,alta,1.0,pequena,1.0,poco,1.0,valiente,0.75,arriesgada,1.0,kamikaze,0.875,evadir
+media,0.5,pequena,0.5,media,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,1.0,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7275763358778627,grande,1.0,poco,1.0,sabio,0.75,segura,0.8637881679389314,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7573689956331877,grande,1.0,poco,1.0,sabio,0.75,segura,0.8786844978165939,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.7417929292929293,grande,1.0,poco,1.0,sabio,0.875,segura,0.8708964646464646,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6846910112359551,grande,1.0,poco,1.0,sabio,1.0,segura,0.8423455056179776,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.7812500000000001,grande,1.0,poco,1.0,sabio,1.0,segura,0.890625,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.7262323943661974,grande,1.0,poco,1.0,sabio,0.875,segura,0.8631161971830987,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.873940677966102,grande,1.0,poco,1.0,sabio,0.75,segura,0.936970338983051,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.5514705882352944,grande,1.0,poco,1.0,sabio,1.0,segura,0.7757352941176472,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,0.75,facil,0.8697916666666665,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,1.0,facil,0.8697916666666665,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,grande,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,0.8579545454545455,grande,0.75,poco,1.0,sabio,1.0,facil,0.8039772727272727,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.5,poco,1.0,sabio,0.75,facil,0.75,bueno,0.5,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,media,0.5,poco,1.0,sabio,1.0,facil,0.75,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.75,"seguir adelante"
+grande,0.75,grande,1.0,baja,1.0,media,0.5,poco,1.0,pasivo,0.875,facil,0.75,asustado,0.75,evadir
+media,0.5,grande,1.0,baja,0.8579545454545455,media,0.5,poco,1.0,pasivo,0.75,facil,0.6789772727272727,asustado,0.75,evadir
+grande,1.0,grande,1.0,baja,0.9320652173913044,media,0.5,poco,1.0,pasivo,1.0,facil,0.7160326086956522,asustado,0.75,evadir
+grande,1.0,grande,1.0,baja,0.8579545454545455,media,0.5,poco,1.0,pasivo,1.0,facil,0.6789772727272727,asustado,0.75,evadir
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,1.0,media,1.0,poco,1.0,pasivo,1.0,segura,1.0,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.7767857142857143,media,1.0,poco,1.0,pasivo,1.0,facil,0.8883928571428572,asustado,1.0,evadir
+grande,1.0,grande,0.75,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,0.875,segura,0.8348214285714286,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.8263888888888888,media,0.75,poco,1.0,sabio,0.75,facil,0.7881944444444444,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,valiente,0.875,segura,0.765625,bueno,0.75,evadir
+media,0.75,pequena,0.5,baja,0.6875,media,0.75,poco,1.0,sabio,0.625,facil,0.71875,bueno,0.625,"seguir adelante"
+pequena,0.5,pequena,0.75,media,0.9375000000000003,media,0.75,poco,1.0,valiente,0.625,segura,0.8437500000000002,bueno,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.75,pequena,1.0,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,0.875,arriesgada,0.5049019607843137,kamikaze,0.75,evadir
+grande,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,media,1.0,media,1.0,media,1.0,poco,1.0,valiente,0.75,segura,1.0,bueno,1.0,evadir
+media,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,0.875,evadir
+media,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,valiente,1.0,segura,1.0,bueno,1.0,evadir
+grande,1.0,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,alta,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,0.8263888888888888,media,0.75,poco,1.0,sabio,0.875,facil,0.7881944444444444,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.625,segura,0.765625,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+grande,0.75,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,grande,0.75,media,0.5208333333333333,media,0.75,poco,1.0,pasivo,0.875,segura,0.6354166666666666,asustado,0.75,evadir
+grande,1.0,media,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,alta,0.6606334841628959,media,1.0,poco,1.0,sabio,0.75,segura,0.8303167420814479,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,1.0,alta,0.6606334841628959,media,1.0,poco,1.0,sabio,0.75,segura,0.8303167420814479,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,0.6875,media,1.0,poco,1.0,sabio,1.0,facil,0.84375,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.8413461538461541,media,1.0,poco,1.0,pasivo,0.875,segura,0.9206730769230771,asustado,0.875,evadir
+grande,1.0,media,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,media,0.75,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.875,"seguir adelante"
+media,0.5,media,1.0,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.75,evadir
+media,0.75,media,0.75,alta,1.0,pequena,1.0,poco,1.0,valiente,0.75,arriesgada,1.0,kamikaze,0.875,evadir
+media,0.5,pequena,0.5,media,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,1.0,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.7127192982456143,grande,1.0,poco,1.0,sabio,1.0,segura,0.8563596491228072,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.6696428571428573,grande,1.0,poco,1.0,sabio,0.875,segura,0.8348214285714286,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.6167763157894736,grande,1.0,poco,1.0,sabio,0.75,segura,0.8083881578947367,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.6567028985507248,grande,1.0,poco,1.0,sabio,0.875,segura,0.8283514492753624,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.6696428571428573,grande,1.0,poco,1.0,sabio,0.75,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.625,grande,1.0,poco,1.0,sabio,0.75,segura,0.8125,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.7996794871794871,grande,1.0,poco,1.0,sabio,0.875,facil,0.8998397435897436,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.8383620689655172,grande,1.0,poco,1.0,sabio,1.0,facil,0.9191810344827587,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,0.75,facil,0.8697916666666665,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.6394230769230768,grande,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.6394230769230768,grande,1.0,poco,1.0,sabio,1.0,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,grande,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.8579545454545455,grande,1.0,poco,1.0,sabio,0.875,facil,0.9289772727272727,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.9495967741935484,grande,1.0,poco,1.0,sabio,1.0,facil,0.9747983870967742,bueno,1.0,"seguir adelante"
+media,0.75,grande,1.0,baja,1.0,grande,1.0,poco,1.0,pasivo,0.875,facil,1.0,asustado,1.0,evadir
+media,1.0,grande,1.0,baja,0.8183139534883721,grande,1.0,poco,1.0,pasivo,1.0,facil,0.909156976744186,asustado,1.0,evadir
+media,0.75,grande,0.75,baja,0.7961956521739132,grande,1.0,poco,1.0,pasivo,0.75,facil,0.8980978260869565,asustado,0.875,evadir
+media,1.0,media,0.5,media,0.5208333333333333,grande,1.0,poco,1.0,valiente,0.75,segura,0.7604166666666666,bueno,0.75,evadir
+media,0.75,media,0.75,media,0.9943181818181821,media,0.5,poco,1.0,valiente,0.75,segura,0.747159090909091,bueno,0.625,evadir
+pequena,0.5,media,1.0,media,0.8413461538461541,media,1.0,poco,1.0,prudente,0.75,segura,0.9206730769230771,bueno,1.0,evadir
+media,0.75,media,0.75,media,0.6696428571428573,media,1.0,poco,1.0,valiente,0.75,segura,0.8348214285714286,bueno,0.875,evadir
+media,1.0,media,1.0,media,1.0,pequena,0.5,poco,1.0,valiente,1.0,arriesgada,0.75,kamikaze,0.75,evadir
+media,0.75,media,0.75,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.875,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.875,facil,0.8883928571428572,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.7767857142857143,media,1.0,poco,1.0,sabio,0.75,facil,0.8883928571428572,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.875,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,grande,1.0,baja,1.0,media,1.0,poco,1.0,pasivo,0.875,facil,1.0,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,1.0,segura,0.8348214285714286,asustado,1.0,evadir
+grande,1.0,grande,0.75,media,0.8413461538461541,media,1.0,poco,1.0,pasivo,0.875,segura,0.9206730769230771,asustado,0.875,evadir
+grande,1.0,media,0.5,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,0.875,segura,0.9687500000000002,asustado,0.875,evadir
+grande,1.0,media,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.5,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,1.0,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.5,arriesgada,0.75,kamikaze,0.5,evadir
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,sabio,1.0,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,0.8413461538461541,media,1.0,poco,1.0,sabio,0.75,segura,0.9206730769230771,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+media,1.0,media,1.0,media,1.0,media,1.0,poco,1.0,valiente,1.0,segura,1.0,bueno,1.0,evadir
+media,0.75,media,0.75,media,0.8413461538461541,media,1.0,poco,1.0,valiente,0.75,segura,0.9206730769230771,bueno,0.875,evadir
+media,0.5,pequena,0.5,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.5,segura,0.9687500000000002,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,0.875,facil,0.875,asustado,0.875,evadir
+media,1.0,grande,0.75,baja,1.0,media,0.75,poco,1.0,pasivo,0.875,facil,0.875,asustado,0.75,evadir
+media,0.75,media,0.5,media,0.9375000000000003,media,0.75,poco,1.0,valiente,0.625,segura,0.8437500000000002,bueno,0.625,evadir
+media,0.5,media,0.75,baja,0.6875,media,0.75,poco,1.0,valiente,0.625,facil,0.71875,bueno,0.75,evadir
+grande,0.75,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,baja,0.6875,media,1.0,poco,1.0,pasivo,1.0,facil,0.84375,asustado,1.0,evadir
+grande,1.0,grande,0.75,baja,0.6875,media,1.0,poco,1.0,pasivo,0.875,facil,0.84375,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5495689655172415,grande,1.0,poco,1.0,sabio,0.75,segura,0.7747844827586208,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.6620762711864407,grande,1.0,poco,1.0,sabio,0.875,segura,0.8310381355932204,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5601415094339622,grande,1.0,poco,1.0,sabio,0.75,segura,0.7800707547169812,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.56781914893617,grande,1.0,poco,1.0,sabio,0.75,facil,0.7839095744680851,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.7996794871794871,grande,1.0,poco,1.0,sabio,0.875,facil,0.8998397435897436,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.8383620689655172,grande,1.0,poco,1.0,sabio,1.0,facil,0.9191810344827587,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,0.75,facil,0.8697916666666665,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,1.0,facil,0.8697916666666665,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,grande,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+media,1.0,grande,1.0,baja,1.0,grande,1.0,poco,1.0,pasivo,1.0,facil,1.0,asustado,1.0,evadir
+media,0.75,grande,1.0,baja,0.917763157894737,grande,1.0,poco,1.0,pasivo,0.875,facil,0.9588815789473685,asustado,1.0,evadir
+media,1.0,grande,0.75,baja,0.7532894736842104,grande,1.0,poco,1.0,pasivo,0.875,facil,0.8766447368421052,asustado,0.875,evadir
+media,0.75,media,0.5,media,1.0,grande,0.75,poco,1.0,valiente,0.625,segura,0.875,bueno,0.625,evadir
+pequena,0.5,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,prudente,0.625,segura,0.765625,bueno,0.75,evadir
+media,0.75,media,1.0,media,1.0,media,0.75,poco,1.0,valiente,0.875,segura,0.875,bueno,0.875,evadir
+media,1.0,media,0.75,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.75,evadir
+media,0.75,media,1.0,alta,1.0,pequena,0.75,poco,1.0,valiente,0.875,arriesgada,0.875,kamikaze,0.875,evadir
+media,0.5,media,0.75,baja,0.6875,media,0.75,poco,1.0,valiente,0.625,facil,0.71875,bueno,0.75,evadir
+media,0.75,pequena,0.5,media,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.625,"seguir adelante"
+media,1.0,pequena,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+media,1.0,pequena,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+media,0.5,pequena,1.0,media,0.9803921568627446,media,0.75,poco,1.0,sabio,0.75,segura,0.8651960784313724,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.5,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.75,segura,0.765625,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,baja,0.8263888888888888,media,0.75,poco,1.0,sabio,0.875,facil,0.7881944444444444,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,baja,0.8263888888888888,media,0.75,poco,1.0,sabio,1.0,facil,0.7881944444444444,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.8263888888888888,media,0.75,poco,1.0,sabio,0.875,facil,0.7881944444444444,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,0.8263888888888888,media,0.75,poco,1.0,sabio,0.875,facil,0.7881944444444444,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.5,pequena,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.625,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.75,segura,0.765625,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.8680555555555557,media,0.75,poco,1.0,sabio,0.875,segura,0.8090277777777779,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,media,0.8680555555555557,media,0.75,poco,1.0,sabio,0.875,segura,0.8090277777777779,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,0.75,facil,0.875,asustado,0.875,evadir
+grande,0.75,grande,1.0,media,0.5208333333333333,media,0.75,poco,1.0,pasivo,0.875,segura,0.6354166666666666,asustado,0.875,evadir
+grande,1.0,grande,0.75,media,1.0,media,0.75,poco,1.0,pasivo,0.875,segura,0.875,asustado,0.75,evadir
+grande,1.0,media,0.5,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,grande,0.75,media,1.0,media,0.75,poco,1.0,pasivo,0.875,segura,0.875,asustado,0.75,evadir
+grande,1.0,media,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.8680555555555557,media,0.75,poco,1.0,sabio,0.875,segura,0.8090277777777779,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.875,facil,0.6796875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,media,0.5208333333333333,media,0.75,poco,1.0,valiente,0.875,segura,0.6354166666666666,bueno,0.875,evadir
+pequena,0.5,media,0.75,media,1.0,media,0.75,poco,1.0,prudente,0.625,segura,0.875,bueno,0.75,evadir
+pequena,0.75,pequena,0.5,media,0.8680555555555557,media,0.75,poco,1.0,valiente,0.625,segura,0.8090277777777779,bueno,0.625,evadir
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.75,segura,0.6354166666666666,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.875,facil,0.6796875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.75,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,0.875,facil,0.875,asustado,0.875,evadir
+pequena,0.5,grande,0.75,media,0.5208333333333333,media,0.75,poco,1.0,prudente,0.625,segura,0.6354166666666666,asustado,0.75,"seguir adelante"
+media,0.75,media,0.5,baja,0.6093749999999999,media,0.75,poco,1.0,valiente,0.625,facil,0.6796875,bueno,0.625,evadir
+media,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,valiente,0.875,segura,0.6354166666666666,bueno,0.75,evadir
+media,0.5,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,valiente,0.75,facil,0.8197115384615383,bueno,1.0,evadir
+grande,0.75,media,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,1.0,poco,1.0,sabio,1.0,segura,0.9687500000000002,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.5,media,0.6696428571428573,media,1.0,poco,1.0,sabio,0.5,segura,0.8348214285714286,bueno,0.75,"seguir adelante"
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,0.6875,media,1.0,poco,1.0,sabio,0.875,facil,0.84375,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,grande,0.75,media,0.5208333333333333,media,0.75,poco,1.0,pasivo,0.875,segura,0.6354166666666666,asustado,0.75,evadir
+grande,1.0,media,0.5,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.75,segura,0.6354166666666666,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.625,facil,0.6796875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.7812500000000001,media,0.75,poco,1.0,sabio,1.0,segura,0.765625,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5495689655172415,grande,1.0,poco,1.0,sabio,0.75,segura,0.7747844827586208,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.5600728155339804,grande,1.0,poco,1.0,sabio,0.875,facil,0.7800364077669901,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5592948717948716,grande,1.0,poco,1.0,sabio,1.0,facil,0.7796474358974358,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5982142857142857,grande,1.0,poco,1.0,sabio,1.0,facil,0.7991071428571428,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,0.75,facil,0.9540441176470589,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,1.0,grande,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.9080882352941176,grande,1.0,poco,1.0,sabio,1.0,facil,0.9540441176470589,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7596153846153847,grande,1.0,poco,1.0,sabio,1.0,facil,0.8798076923076923,bueno,1.0,"seguir adelante"
+grande,1.0,grande,0.75,baja,0.7632575757575756,grande,1.0,poco,1.0,pasivo,0.875,facil,0.8816287878787878,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.7306034482758622,grande,1.0,poco,1.0,sabio,0.75,facil,0.865301724137931,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.5624999999999999,grande,1.0,poco,1.0,sabio,0.875,facil,0.78125,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,baja,0.6279761904761904,grande,1.0,poco,1.0,sabio,0.875,facil,0.8139880952380951,bueno,1.0,"seguir adelante"
+media,0.5,media,0.75,media,0.6433823529411767,grande,1.0,poco,1.0,valiente,0.625,segura,0.8216911764705883,bueno,0.875,evadir
+media,0.75,pequena,0.5,baja,0.6394230769230768,grande,0.75,poco,1.0,sabio,0.625,facil,0.6947115384615383,bueno,0.625,"seguir adelante"
+media,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,valiente,0.875,segura,0.6354166666666666,bueno,0.75,evadir
+media,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,0.75,poco,1.0,sabio,1.0,segura,0.8437500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,baja,0.6875,media,0.75,poco,1.0,sabio,0.625,facil,0.71875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,0.75,media,1.0,pequena,0.75,poco,1.0,sabio,0.875,arriesgada,0.875,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+pequena,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,valiente,0.75,facil,0.875,bueno,0.875,evadir
+media,0.5,media,0.75,media,1.0,pequena,0.75,poco,1.0,valiente,0.625,arriesgada,0.875,kamikaze,0.75,evadir
+media,0.75,media,1.0,media,1.0,pequena,0.75,poco,1.0,valiente,0.875,arriesgada,0.875,kamikaze,0.875,evadir
+media,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,valiente,0.875,segura,0.765625,bueno,0.75,evadir
+grande,1.0,media,0.5,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,grande,0.75,media,0.7812500000000001,media,0.75,poco,1.0,pasivo,0.875,segura,0.765625,asustado,0.75,evadir
+grande,1.0,media,0.5,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.75,segura,0.765625,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,media,0.8823529411764706,media,0.75,poco,1.0,sabio,0.875,segura,0.8161764705882353,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.6302521008403357,media,1.0,poco,1.0,sabio,1.0,segura,0.8151260504201678,bueno,1.0,"seguir adelante"
+media,0.5,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,valiente,0.625,segura,0.765625,bueno,0.75,evadir
+grande,0.75,pequena,0.5,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.625,segura,0.765625,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,media,0.8823529411764706,media,0.75,poco,1.0,sabio,0.625,segura,0.8161764705882353,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,0.8823529411764706,media,0.75,poco,1.0,sabio,0.875,segura,0.8161764705882353,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,0.7812500000000001,media,0.75,poco,1.0,sabio,1.0,segura,0.765625,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,media,0.7812500000000001,media,0.75,poco,1.0,valiente,0.875,segura,0.765625,bueno,0.875,evadir
+pequena,0.5,media,0.75,baja,1.0,media,0.75,poco,1.0,prudente,0.625,facil,0.875,bueno,0.75,evadir
+grande,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.75,media,1.0,baja,0.6875,media,0.75,poco,1.0,valiente,0.875,facil,0.71875,bueno,0.875,evadir
+media,0.75,media,0.75,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,0.5,alta,1.0,pequena,1.0,poco,1.0,sabio,0.75,arriesgada,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,0.875,arriesgada,0.5049019607843137,kamikaze,0.625,evadir
+grande,1.0,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,1.0,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.6875,media,1.0,poco,1.0,sabio,0.75,facil,0.84375,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.75,segura,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,alta,1.0,media,0.75,poco,1.0,pasivo,1.0,segura,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,1.0,facil,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,media,1.0,media,0.75,poco,1.0,pasivo,1.0,segura,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,media,0.7812500000000001,media,0.75,poco,1.0,pasivo,1.0,segura,0.765625,asustado,0.875,evadir
+grande,1.0,grande,0.75,baja,0.6875,media,0.75,poco,1.0,pasivo,0.875,facil,0.71875,asustado,0.75,evadir
+grande,1.0,media,0.5,baja,0.6875,media,0.75,poco,1.0,sabio,0.75,facil,0.71875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,media,0.7812500000000001,media,0.75,poco,1.0,sabio,0.875,segura,0.765625,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,0.75,baja,0.6875,media,0.75,poco,1.0,sabio,0.875,facil,0.71875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6875,media,0.75,poco,1.0,sabio,0.875,facil,0.71875,bueno,0.875,"seguir adelante"
+pequena,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,valiente,0.75,facil,0.875,bueno,0.875,evadir
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.8528386454183268,grande,1.0,poco,1.0,sabio,1.0,segura,0.9264193227091634,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6935975609756098,grande,1.0,poco,1.0,sabio,1.0,segura,0.8467987804878049,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5994496855345911,grande,1.0,poco,1.0,sabio,0.875,segura,0.7997248427672956,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5495689655172415,grande,1.0,poco,1.0,sabio,0.75,segura,0.7747844827586208,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.5600728155339804,grande,1.0,poco,1.0,sabio,0.875,facil,0.7800364077669901,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.5716463414634149,grande,1.0,poco,1.0,sabio,1.0,segura,0.7858231707317074,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.5982142857142857,grande,1.0,poco,1.0,sabio,1.0,facil,0.7991071428571428,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7596153846153847,grande,1.0,poco,1.0,sabio,1.0,facil,0.8798076923076923,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.75,media,1.0,grande,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7596153846153847,grande,1.0,poco,1.0,sabio,1.0,facil,0.8798076923076923,bueno,1.0,"seguir adelante"
+grande,1.0,grande,0.75,baja,0.7632575757575756,grande,1.0,poco,1.0,pasivo,0.875,facil,0.8816287878787878,asustado,0.875,evadir
+grande,1.0,media,0.5,baja,0.7306034482758622,grande,1.0,poco,1.0,sabio,0.75,facil,0.865301724137931,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,baja,0.5624999999999999,grande,1.0,poco,1.0,sabio,0.875,facil,0.78125,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,baja,0.6279761904761904,grande,1.0,poco,1.0,sabio,0.875,facil,0.8139880952380951,bueno,1.0,"seguir adelante"
+media,0.5,media,0.75,media,0.6433823529411767,grande,1.0,poco,1.0,valiente,0.625,segura,0.8216911764705883,bueno,0.875,evadir
+media,0.75,pequena,0.5,baja,0.6394230769230768,grande,0.75,poco,1.0,sabio,0.625,facil,0.6947115384615383,bueno,0.625,"seguir adelante"
+media,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,valiente,0.875,segura,0.6354166666666666,bueno,0.75,evadir
+media,0.75,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.625,facil,0.875,bueno,0.625,"seguir adelante"
+media,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,1.0,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,1.0,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.9375000000000003,media,0.75,poco,1.0,sabio,1.0,segura,0.8437500000000002,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,1.0,"seguir adelante"
+media,0.75,pequena,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,1.0,pequena,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,1.0,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,pequena,1.0,baja,1.0,media,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,1.0,"seguir adelante"
+grande,0.75,media,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+media,0.5,media,1.0,media,0.5208333333333333,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.5104166666666666,kamikaze,0.75,evadir
+media,0.75,media,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.5104166666666666,kamikaze,0.625,evadir
+grande,1.0,media,0.5,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.75,"seguir adelante"
+grande,1.0,grande,0.75,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,0.875,segura,0.9687500000000002,asustado,0.875,evadir
+grande,1.0,media,0.5,alta,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.5,evadir
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,1.0,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.5,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.625,"seguir adelante"
+media,0.5,pequena,0.75,alta,1.0,media,0.75,poco,1.0,sabio,0.625,segura,0.875,bueno,0.75,"seguir adelante"
+media,0.5,pequena,1.0,alta,0.6606334841628959,media,1.0,poco,1.0,sabio,0.75,segura,0.8303167420814479,bueno,1.0,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.875,"seguir adelante"
+grande,0.75,media,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.875,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,media,1.0,media,0.75,poco,1.0,sabio,0.75,segura,0.875,bueno,0.875,"seguir adelante"
+media,0.5,media,1.0,media,0.8413461538461541,media,1.0,poco,1.0,valiente,0.75,segura,0.9206730769230771,bueno,1.0,evadir
+media,0.75,media,0.75,media,1.0,pequena,0.5,poco,1.0,valiente,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,1.0,pequena,0.5,alta,1.0,pequena,1.0,poco,1.0,sabio,0.75,arriesgada,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,media,1.0,pequena,0.5,poco,1.0,sabio,0.75,arriesgada,0.75,kamikaze,0.625,evadir
+media,0.5,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.5,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.75,facil,0.8197115384615383,bueno,0.75,"seguir adelante"
+grande,1.0,media,0.75,alta,0.5098039215686273,pequena,0.5,poco,1.0,sabio,0.875,arriesgada,0.5049019607843137,kamikaze,0.625,evadir
+grande,1.0,media,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,1.0,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,1.0,media,1.0,poco,1.0,sabio,0.875,segura,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,media,0.9375000000000003,media,1.0,poco,1.0,sabio,0.75,segura,0.9687500000000002,bueno,0.875,"seguir adelante"
+grande,0.75,pequena,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.75,segura,0.6354166666666666,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,0.6093749999999999,media,0.75,poco,1.0,sabio,0.875,facil,0.6796875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+media,0.75,pequena,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,sabio,0.875,facil,0.8197115384615383,bueno,1.0,"seguir adelante"
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.9375000000000003,media,1.0,poco,1.0,pasivo,1.0,segura,0.9687500000000002,asustado,1.0,evadir
+grande,1.0,grande,1.0,baja,0.6394230769230768,media,1.0,poco,1.0,pasivo,1.0,facil,0.8197115384615383,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,0.6696428571428573,media,1.0,poco,1.0,pasivo,1.0,segura,0.8348214285714286,asustado,1.0,evadir
+grande,1.0,grande,1.0,media,1.0,pequena,0.5,poco,1.0,pasivo,1.0,arriesgada,0.75,malo,0.75,evadir
+grande,1.0,grande,0.75,media,0.5208333333333333,pequena,0.5,poco,1.0,pasivo,0.875,arriesgada,0.5104166666666666,malo,0.625,evadir
+grande,1.0,media,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,media,1.0,media,0.5208333333333333,media,0.75,poco,1.0,sabio,1.0,segura,0.6354166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,media,0.75,poco,1.0,sabio,0.875,segura,0.6354166666666666,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,media,0.5,poco,1.0,sabio,1.0,facil,0.75,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.5,poco,1.0,sabio,0.875,facil,0.75,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7767857142857143,media,0.5,poco,1.0,sabio,1.0,facil,0.6383928571428572,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,0.75,baja,0.5888157894736843,media,0.5,poco,1.0,sabio,0.75,facil,0.5444078947368421,bueno,0.625,"seguir adelante"
+media,0.5,pequena,1.0,media,0.7401315789473684,media,0.5,poco,1.0,sabio,0.75,segura,0.6200657894736842,bueno,0.75,"seguir adelante"
+media,0.75,pequena,1.0,media,1.0,media,0.5,poco,1.0,sabio,0.875,segura,0.75,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5629208754208755,grande,1.0,poco,1.0,sabio,0.875,segura,0.7814604377104377,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7275763358778627,grande,1.0,poco,1.0,sabio,0.75,segura,0.8637881679389314,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.7573689956331877,grande,1.0,poco,1.0,sabio,0.75,segura,0.8786844978165939,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.7884174311926608,grande,1.0,poco,1.0,sabio,0.875,segura,0.8942087155963304,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.6846910112359551,grande,1.0,poco,1.0,sabio,1.0,segura,0.8423455056179776,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,media,0.7812500000000001,grande,1.0,poco,1.0,sabio,1.0,segura,0.890625,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.7262323943661974,grande,1.0,poco,1.0,sabio,0.875,segura,0.8631161971830987,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,media,0.873940677966102,grande,1.0,poco,1.0,sabio,0.75,segura,0.936970338983051,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5716463414634149,grande,1.0,poco,1.0,sabio,0.875,segura,0.7858231707317074,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7106481481481483,grande,1.0,poco,1.0,sabio,1.0,facil,0.8553240740740742,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,0.5,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,0.75,facil,0.8697916666666665,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,media,0.5208333333333333,grande,1.0,poco,1.0,sabio,0.875,segura,0.7604166666666666,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,0.7395833333333331,grande,1.0,poco,1.0,sabio,1.0,facil,0.8697916666666665,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,grande,1.0,poco,1.0,sabio,0.75,facil,1.0,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,pequena,1.0,baja,1.0,grande,1.0,poco,1.0,sabio,1.0,facil,1.0,bueno,1.0,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,grande,1.0,poco,1.0,sabio,0.875,facil,1.0,bueno,0.875,"seguir adelante"
+grande,1.0,media,1.0,baja,0.8579545454545455,grande,0.75,poco,1.0,sabio,1.0,facil,0.8039772727272727,bueno,0.875,"seguir adelante"
+grande,1.0,media,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,1.0,pequena,0.5,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.625,"seguir adelante"
+grande,1.0,pequena,0.75,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.75,"seguir adelante"
+grande,0.75,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.875,facil,0.875,bueno,0.875,"seguir adelante"
+media,0.5,pequena,1.0,baja,1.0,media,0.75,poco,1.0,sabio,0.75,facil,0.875,bueno,0.875,"seguir adelante"
+grande,1.0,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,1.0,facil,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,1.0,facil,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,1.0,facil,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,baja,1.0,media,0.75,poco,1.0,pasivo,1.0,facil,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,media,1.0,media,0.75,poco,1.0,pasivo,1.0,segura,0.875,asustado,0.875,evadir
+grande,1.0,grande,1.0,media,0.7812500000000001,media,0.75,poco,1.0,pasivo,1.0,segura,0.765625,asustado,0.875,evadir
+grande,1.0,grande,1.0,media,1.0,pequena,1.0,poco,1.0,pasivo,1.0,arriesgada,1.0,malo,1.0,evadir
+grande,1.0,grande,1.0,baja,1.0,pequena,1.0,poco,1.0,pasivo,1.0,peligrosa,1.0,malo,1.0,evadir
+grande,1.0,grande,0.75,baja,1.0,pequena,1.0,poco,1.0,pasivo,0.875,peligrosa,1.0,malo,0.875,evadir
+grande,1.0,media,0.5,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.75,evadir
+grande,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,0.5,media,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,pequena,0.5,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.875,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.5,media,1.0,baja,1.0,pequena,1.0,poco,1.0,prudente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,media,1.0,pequena,1.0,poco,1.0,valiente,0.75,arriesgada,1.0,kamikaze,0.875,evadir
+media,1.0,pequena,0.5,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,0.875,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,media,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,1.0,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,media,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,1.0,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,pequena,0.5,media,1.0,pequena,1.0,poco,1.0,sabio,0.75,arriesgada,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.875,peligrosa,1.0,kamikaze,1.0,evadir
+grande,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,0.5,media,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,0.75,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,pequena,0.5,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,0.75,media,1.0,pequena,1.0,poco,1.0,valiente,0.75,arriesgada,1.0,kamikaze,0.875,evadir
+pequena,1.0,pequena,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,1.0,arriesgada,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.875,peligrosa,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,media,1.0,pequena,1.0,poco,1.0,valiente,0.75,arriesgada,1.0,kamikaze,0.875,evadir
+pequena,0.5,media,1.0,media,1.0,pequena,1.0,poco,1.0,prudente,0.75,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+grande,1.0,media,0.5,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.75,evadir
+grande,0.75,grande,0.75,baja,1.0,pequena,1.0,poco,1.0,pasivo,0.75,peligrosa,1.0,malo,0.875,evadir
+media,0.5,media,0.5,media,1.0,pequena,1.0,poco,1.0,valiente,0.5,arriesgada,1.0,kamikaze,0.75,evadir
+grande,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,0.5,media,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,pequena,0.5,media,1.0,pequena,1.0,poco,1.0,sabio,0.75,arriesgada,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.875,peligrosa,1.0,kamikaze,1.0,evadir
+media,1.0,media,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,1.0,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,media,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+media,1.0,pequena,0.5,media,1.0,pequena,1.0,poco,1.0,sabio,0.75,arriesgada,1.0,kamikaze,0.75,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,0.875,arriesgada,1.0,kamikaze,1.0,evadir
+media,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,sabio,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,0.5,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,0.75,baja,1.0,pequena,1.0,poco,1.0,valiente,0.75,peligrosa,1.0,kamikaze,0.875,evadir
+pequena,1.0,pequena,1.0,media,1.0,pequena,1.0,poco,1.0,valiente,1.0,arriesgada,1.0,kamikaze,1.0,evadir
+pequena,0.75,pequena,1.0,baja,1.0,pequena,1.0,poco,1.0,valiente,0.875,peligrosa,1.0,kamikaze,1.0,evadir

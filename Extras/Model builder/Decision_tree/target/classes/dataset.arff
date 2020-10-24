@@ -1,0 +1,1183 @@
+@RELATION player
+
+@ATTRIBUTE proteccion         {baja,media,alta}
+@ATTRIBUTE gv_proteccion      NUMERIC
+@ATTRIBUTE distancia_ja       {pequena,media,grande}
+@ATTRIBUTE gv_distancia_ja    NUMERIC
+@ATTRIBUTE cercania           {"mucho mas cerca","mas cerca","mas lejos","mucho mas lejos"}
+@ATTRIBUTE gv_cercania_jr      NUMERIC
+@ATTRIBUTE accion             {"seguir adelante",evadir}
+
+@DATA
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7275763358778627,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7573689956331877,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7417929292929293,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7646276595744681,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7812500000000001,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7262323943661974,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.873940677966102,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5514705882352944,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",0.75,"seguir adelante"
+baja,0.8579545454545455,grande,0.75,"mucho mas cerca",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5432692307692306,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.617732558139535,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5592948717948716,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5489864864864865,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7632575757575756,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.7306034482758622,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.5624999999999999,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.6279761904761904,grande,1.0,"mas cerca",0.75,"seguir adelante"
+media,0.6433823529411767,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.6394230769230768,grande,0.75,"mas cerca",0.75,"seguir adelante"
+media,0.5208333333333333,media,0.75,"mas cerca",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",1.0,evadir
+media,0.5208333333333333,pequena,0.5,"mas lejos",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+alta,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+alta,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.6302521008403357,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,0.5098039215686273,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5495689655172415,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5463709677419355,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5716463414634149,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5489864864864865,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7632575757575756,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.7306034482758622,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.7106481481481483,grande,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.6114130434782609,grande,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.5888157894736843,grande,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.7291666666666666,grande,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.5738636363636364,media,0.5,"mas cerca",1.0,"seguir adelante"
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",1.0,evadir
+media,0.5208333333333333,pequena,0.5,"mas lejos",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,0.6302521008403357,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6302521008403357,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,0.5098039215686273,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5495689655172415,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6620762711864407,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5601415094339622,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.56781914893617,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7996794871794871,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.8383620689655172,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas lejos",0.75,"seguir adelante"
+baja,1.0,grande,0.75,"mas lejos",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas lejos",0.75,"seguir adelante"
+alta,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.7767857142857143,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.7767857142857143,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas lejos",0.5,evadir
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+media,0.8823529411764706,media,0.75,"mas lejos",0.75,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+baja,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas lejos",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas lejos",1.0,evadir
+baja,0.7767857142857143,pequena,0.5,"mas lejos",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas lejos",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas lejos",1.0,evadir
+baja,0.7767857142857143,pequena,0.5,"mas lejos",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+baja,0.7767857142857143,pequena,0.5,"mas cerca",1.0,evadir
+baja,1.0,pequena,0.5,"mas cerca",1.0,"seguir adelante"
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5495689655172415,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6620762711864407,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5601415094339622,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.625,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7996794871794871,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.8383620689655172,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas lejos",0.75,"seguir adelante"
+baja,1.0,grande,0.75,"mas lejos",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,1.0,pequena,0.5,"mas lejos",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,0.5208333333333333,media,0.75,"mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+alta,1.0,media,0.75,"mas cerca",0.75,evadir
+alta,1.0,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+alta,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+alta,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.8680555555555557,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas lejos",0.75,evadir
+media,0.8680555555555557,media,0.75,"mas lejos",0.75,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+media,0.6696428571428573,media,0.5,"mas lejos",0.5,evadir
+baja,0.5888157894736843,media,0.5,"mas lejos",0.5,evadir
+media,0.7102272727272729,media,0.5,"mas lejos",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7401315789473684,media,0.5,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.5,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7275763358778627,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7573689956331877,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7417929292929293,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6846910112359551,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7553807947019869,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6461466165413534,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7102272727272729,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5716463414634149,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7106481481481483,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5738636363636364,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.5738636363636364,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.5738636363636364,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.8579545454545455,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.8124999999999998,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.7767857142857143,media,0.5,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,1.0,media,1.0,"mas lejos",1.0,evadir
+baja,1.0,media,1.0,"mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,1.0,"mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,evadir
+media,0.8823529411764706,media,0.75,"mas cerca",0.75,evadir
+media,0.8823529411764706,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6302521008403357,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",1.0,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+baja,1.0,media,1.0,"mucho mas lejos",1.0,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,"seguir adelante"
+alta,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7275763358778627,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7573689956331877,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7417929292929293,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6846910112359551,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7553807947019869,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7262323943661974,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.873940677966102,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5514705882352944,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.8579545454545455,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.9495967741935484,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.8124999999999998,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mas lejos",0.5,evadir
+baja,0.8579545454545455,media,0.5,"mucho mas lejos",1.0,evadir
+baja,0.9320652173913044,media,0.5,"mas lejos",0.5,evadir
+baja,0.8579545454545455,media,0.5,"mas cerca",1.0,"seguir adelante"
+baja,0.6875,media,1.0,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6696428571428573,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mas cerca",1.0,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,1.0,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,0.5098039215686273,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6696428571428573,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",1.0,evadir
+media,0.5208333333333333,pequena,0.5,"mas lejos",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,0.6302521008403357,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6302521008403357,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",1.0,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5495689655172415,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6620762711864407,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5601415094339622,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.56781914893617,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.8487903225806452,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5738636363636364,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.5738636363636364,grande,1.0,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas lejos",0.75,evadir
+baja,0.917763157894737,grande,1.0,"mas lejos",0.75,evadir
+baja,0.7532894736842104,grande,1.0,"mas lejos",0.75,"seguir adelante"
+media,1.0,grande,0.75,"mas lejos",0.75,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,1.0,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas lejos",0.75,"seguir adelante"
+alta,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mas lejos",1.0,evadir
+media,0.6696428571428573,media,1.0,"mas lejos",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,0.6302521008403357,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.8823529411764706,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,0.9375000000000003,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,0.9375000000000003,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5495689655172415,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6620762711864407,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6696428571428573,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.625,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7996794871794871,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.8383620689655172,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7395833333333331,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas lejos",0.75,evadir
+baja,0.917763157894737,grande,1.0,"mas lejos",0.75,evadir
+baja,0.7532894736842104,grande,1.0,"mas lejos",0.75,"seguir adelante"
+media,1.0,grande,0.75,"mas lejos",0.75,"seguir adelante"
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,0.8413461538461541,media,1.0,"mas lejos",1.0,evadir
+baja,0.6875,media,0.75,"mas lejos",0.75,"seguir adelante"
+media,1.0,pequena,0.5,"mas lejos",0.5,evadir
+media,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mas lejos",1.0,evadir
+media,0.6696428571428573,media,1.0,"mas lejos",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,0.6302521008403357,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.8823529411764706,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,0.9375000000000003,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas lejos",0.75,evadir
+baja,1.0,media,0.75,"mas lejos",0.75,evadir
+media,0.9375000000000003,media,0.75,"mas lejos",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+media,0.8413461538461541,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5495689655172415,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5600728155339804,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5592948717948716,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5982142857142857,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.9080882352941176,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.9080882352941176,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.8487903225806452,grande,1.0,"mas cerca",1.0,"seguir adelante"
+baja,0.7306034482758622,grande,1.0,"mas cerca",0.75,"seguir adelante"
+baja,0.7961956521739132,grande,1.0,"mas cerca",1.0,"seguir adelante"
+media,0.5756578947368423,grande,1.0,"mas cerca",1.0,"seguir adelante"
+baja,0.6875,grande,1.0,"mas cerca",1.0,"seguir adelante"
+baja,0.5738636363636364,media,0.5,"mas cerca",1.0,"seguir adelante"
+baja,0.7767857142857143,media,1.0,"mas lejos",0.5,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.9375000000000003,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas lejos",0.75,evadir
+media,1.0,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mas cerca",0.75,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,0.6302521008403357,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6302521008403357,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+media,0.8680555555555557,media,0.75,"mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,0.5098039215686273,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.8528386454183268,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6935975609756098,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5994496855345911,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.6167763157894736,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.5463709677419355,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5716463414634149,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5489864864864865,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7596153846153847,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.6471774193548386,grande,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.7106481481481483,grande,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.6114130434782609,grande,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.5888157894736843,grande,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.7291666666666666,grande,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.5738636363636364,media,0.5,"mas cerca",1.0,"seguir adelante"
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,"seguir adelante"
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.7767857142857143,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,0.6875,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,"seguir adelante"
+media,1.0,pequena,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mas cerca",0.75,evadir
+baja,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,0.5208333333333333,pequena,0.5,"mas cerca",0.5,evadir
+media,0.5208333333333333,pequena,0.5,"mas cerca",1.0,evadir
+media,0.5208333333333333,pequena,0.5,"mas lejos",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas cerca",0.5,evadir
+media,0.6302521008403357,media,1.0,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mas cerca",0.5,"seguir adelante"
+alta,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.6302521008403357,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas lejos",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",1.0,"seguir adelante"
+alta,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",1.0,"seguir adelante"
+alta,0.5098039215686273,pequena,0.5,"mas cerca",0.5,evadir
+media,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+media,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6093749999999999,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,media,1.0,"mucho mas cerca",1.0,evadir
+media,0.9375000000000003,media,1.0,"mas cerca",1.0,"seguir adelante"
+media,0.9375000000000003,media,1.0,"mas cerca",0.5,evadir
+baja,0.6394230769230768,media,1.0,"mas cerca",0.5,evadir
+media,0.6696428571428573,media,1.0,"mas cerca",0.5,"seguir adelante"
+media,1.0,pequena,0.5,"mas cerca",0.5,evadir
+media,0.7812500000000001,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",0.75,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+media,0.5208333333333333,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.75,"mucho mas cerca",1.0,evadir
+baja,0.5888157894736843,media,0.5,"mucho mas cerca",1.0,evadir
+media,0.7401315789473684,media,0.5,"mucho mas cerca",1.0,evadir
+media,1.0,media,0.5,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5629208754208755,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7275763358778627,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7573689956331877,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7884174311926608,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7646276595744681,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7812500000000001,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.7262323943661974,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.873940677966102,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5514705882352944,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+media,0.5208333333333333,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.6394230769230768,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.8579545454545455,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,0.9495967741935484,grande,1.0,"mucho mas cerca",1.0,evadir
+baja,1.0,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,0.8124999999999998,grande,1.0,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,media,0.5,"mucho mas cerca",1.0,"seguir adelante"
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mucho mas cerca",1.0,evadir
+baja,1.0,media,0.5,"mas lejos",0.5,evadir
+baja,0.8579545454545455,media,0.5,"mucho mas lejos",1.0,evadir
+baja,0.9320652173913044,media,0.5,"mas lejos",0.5,evadir
+baja,0.8579545454545455,media,0.5,"mas cerca",1.0,"seguir adelante"
+baja,0.6875,media,1.0,"mas cerca",0.5,"seguir adelante"
+baja,0.6875,media,1.0,"mucho mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+media,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir
+baja,1.0,pequena,1.0,"mas lejos",0.5,evadir
+media,1.0,pequena,1.0,"mas lejos",0.5,evadir
+baja,1.0,pequena,1.0,"mas cerca",1.0,evadir

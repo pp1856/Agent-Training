@@ -1,0 +1,1 @@
+Replace the class Player.java in the project to test different classifiers. When doing this, you must adjust the number of attributes in Traza.java. In the case of the Test 1, you must use the class Traza_1v2.java instead of Traza.java replacing the uses of Traza in Jugador.java.
